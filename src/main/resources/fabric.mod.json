@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "saturation-fixer",
+  "version": "${1.0}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "saturation-fixer",
+  "description": "Steaks are no longer health potions",
   "authors": [
-    "Me!"
+    "Aww_Shoot#8649"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/AwwShoot/",
+    "sources": "https://github.com/AwwShoot/saturation-fixer"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/saturation_fixer/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.saturation_fixer.SatFixCore"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "saturation_fixer.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.18.*",
     "java": ">=17"
   },
   "suggests": {

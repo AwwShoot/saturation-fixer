@@ -1,9 +1,4 @@
-# Fabric Example Mod
-
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Add my own separate foodtickcounter to HungerManager.update to tick over healing at the tail of the method.
+If the tick >= 105 - (5 * hunger) && hunger > 0 {
+Heal 1
+Set tick to 0
