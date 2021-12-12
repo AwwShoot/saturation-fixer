@@ -1,4 +1,1 @@
-Add my own separate foodtickcounter to HungerManager.update to tick over healing at the tail of the method.
-If the tick >= 105 - (5 * hunger) && hunger > 0 {
-Heal 1
-Set tick to 0
+Passively heal every 5 seconds if above half food, 10 seconds if below. To compensate for the high saturation values of some foods which were made with the old healing system in mind, a small amount of exhaustion is added for each heal only if saturation > 0.
